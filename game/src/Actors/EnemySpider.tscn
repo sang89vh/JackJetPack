@@ -1,0 +1,121 @@
+[gd_scene load_steps=59 format=2]
+
+[ext_resource path="res://src/Actors/Enemy.gd" type="Script" id=1]
+[ext_resource path="res://assets/CAsset/Enemy Sprite/Enemy02/Normal Fire/skeleton-NormShoot_2.png" type="Texture" id=2]
+[ext_resource path="res://assets/CAsset/Enemy Sprite/Enemy02/Normal Fire/skeleton-NormShoot_3.png" type="Texture" id=3]
+[ext_resource path="res://assets/CAsset/Enemy Sprite/Enemy02/Normal Fire/skeleton-NormShoot_1.png" type="Texture" id=4]
+[ext_resource path="res://assets/CAsset/Enemy Sprite/Enemy02/Normal Fire/skeleton-NormShoot_0.png" type="Texture" id=5]
+[ext_resource path="res://assets/CAsset/Enemy Sprite/Enemy02/Normal Fire/skeleton-NormShoot_6.png" type="Texture" id=6]
+[ext_resource path="res://assets/CAsset/Enemy Sprite/Enemy02/Normal Fire/skeleton-NormShoot_7.png" type="Texture" id=7]
+[ext_resource path="res://assets/CAsset/Enemy Sprite/Enemy02/Normal Fire/skeleton-NormShoot_8.png" type="Texture" id=8]
+[ext_resource path="res://assets/CAsset/Enemy Sprite/Enemy02/Normal Fire/skeleton-NormShoot_4.png" type="Texture" id=9]
+[ext_resource path="res://assets/CAsset/Enemy Sprite/Enemy02/Normal Fire/skeleton-NormShoot_5.png" type="Texture" id=10]
+[ext_resource path="res://assets/CAsset/Enemy Sprite/Enemy02/Normal Fire/skeleton-NormShoot_9.png" type="Texture" id=11]
+[ext_resource path="res://assets/CAsset/Enemy Sprite/Enemy02/Normal Moving/skeleton-NormWalk_1.png" type="Texture" id=35]
+[ext_resource path="res://assets/CAsset/Enemy Sprite/Enemy02/Normal Moving/skeleton-NormWalk_4.png" type="Texture" id=36]
+[ext_resource path="res://assets/CAsset/Enemy Sprite/Enemy02/Normal Moving/skeleton-NormWalk_6.png" type="Texture" id=37]
+[ext_resource path="res://assets/CAsset/Enemy Sprite/Enemy02/Normal Moving/skeleton-NormWalk_13.png" type="Texture" id=38]
+[ext_resource path="res://assets/CAsset/Enemy Sprite/Enemy02/Normal Moving/skeleton-NormWalk_14.png" type="Texture" id=39]
+[ext_resource path="res://assets/CAsset/Enemy Sprite/Enemy02/Normal Moving/skeleton-NormWalk_16.png" type="Texture" id=40]
+[ext_resource path="res://assets/CAsset/Enemy Sprite/Enemy02/Normal Moving/skeleton-NormWalk_17.png" type="Texture" id=41]
+[ext_resource path="res://assets/CAsset/Enemy Sprite/Enemy02/Normal Moving/skeleton-NormWalk_0.png" type="Texture" id=42]
+[ext_resource path="res://assets/CAsset/Enemy Sprite/Enemy02/Normal Moving/skeleton-NormWalk_5.png" type="Texture" id=43]
+[ext_resource path="res://assets/CAsset/Enemy Sprite/Enemy02/Normal Moving/skeleton-NormWalk_9.png" type="Texture" id=44]
+[ext_resource path="res://assets/CAsset/Enemy Sprite/Enemy02/Normal Moving/skeleton-NormWalk_3.png" type="Texture" id=45]
+[ext_resource path="res://assets/CAsset/Enemy Sprite/Enemy02/Normal Moving/skeleton-NormWalk_10.png" type="Texture" id=46]
+[ext_resource path="res://assets/CAsset/Enemy Sprite/Enemy02/Normal Moving/skeleton-NormWalk_12.png" type="Texture" id=47]
+[ext_resource path="res://assets/CAsset/Enemy Sprite/Enemy02/Normal Moving/skeleton-NormWalk_15.png" type="Texture" id=48]
+[ext_resource path="res://assets/CAsset/Enemy Sprite/Enemy02/Normal Death/skeleton-NormDeath_0.png" type="Texture" id=49]
+[ext_resource path="res://assets/CAsset/Enemy Sprite/Enemy02/Normal Death/skeleton-NormDeath_1.png" type="Texture" id=50]
+[ext_resource path="res://assets/CAsset/Enemy Sprite/Enemy02/Normal Death/skeleton-NormDeath_2.png" type="Texture" id=51]
+[ext_resource path="res://assets/CAsset/Enemy Sprite/Enemy02/Normal Death/skeleton-NormDeath_3.png" type="Texture" id=52]
+[ext_resource path="res://assets/CAsset/Enemy Sprite/Enemy02/Normal Death/skeleton-NormDeath_4.png" type="Texture" id=53]
+[ext_resource path="res://assets/CAsset/Enemy Sprite/Enemy02/Normal Death/skeleton-NormDeath_5.png" type="Texture" id=54]
+[ext_resource path="res://assets/CAsset/Enemy Sprite/Enemy02/Normal Death/skeleton-NormDeath_6.png" type="Texture" id=55]
+[ext_resource path="res://assets/CAsset/Enemy Sprite/Enemy02/Normal Moving/skeleton-NormWalk_8.png" type="Texture" id=56]
+[ext_resource path="res://assets/CAsset/Enemy Sprite/Enemy02/Normal Moving/skeleton-NormWalk_11.png" type="Texture" id=57]
+[ext_resource path="res://assets/CAsset/Enemy Sprite/Enemy02/Normal Moving/skeleton-NormWalk_2.png" type="Texture" id=58]
+[ext_resource path="res://assets/CAsset/Enemy Sprite/Enemy02/Normal Moving/skeleton-NormWalk_7.png" type="Texture" id=59]
+[ext_resource path="res://assets/CAsset/Enemy Sprite/Enemy02/Normal Death/skeleton-NormDeath_19.png" type="Texture" id=60]
+[ext_resource path="res://assets/CAsset/Enemy Sprite/Enemy02/Normal Death/skeleton-NormDeath_25.png" type="Texture" id=61]
+[ext_resource path="res://assets/CAsset/Enemy Sprite/Enemy02/Normal Death/skeleton-NormDeath_21.png" type="Texture" id=65]
+[ext_resource path="res://assets/CAsset/Enemy Sprite/Enemy02/Normal Death/skeleton-NormDeath_14.png" type="Texture" id=67]
+[ext_resource path="res://assets/CAsset/Enemy Sprite/Enemy02/Normal Death/skeleton-NormDeath_16.png" type="Texture" id=71]
+[ext_resource path="res://assets/CAsset/Enemy Sprite/Enemy02/Normal Death/skeleton-NormDeath_9.png" type="Texture" id=72]
+[ext_resource path="res://assets/CAsset/Enemy Sprite/Enemy02/Normal Death/skeleton-NormDeath_17.png" type="Texture" id=73]
+[ext_resource path="res://src/Objects/PistolEnemy.tscn" type="PackedScene" id=74]
+[ext_resource path="res://assets/CAsset/Enemy Sprite/Enemy02/Normal Death/skeleton-NormDeath_11.png" type="Texture" id=75]
+[ext_resource path="res://assets/CAsset/Enemy Sprite/Enemy02/Normal Death/skeleton-NormDeath_8.png" type="Texture" id=76]
+[ext_resource path="res://assets/CAsset/Enemy Sprite/Enemy02/Normal Death/skeleton-NormDeath_10.png" type="Texture" id=77]
+[ext_resource path="res://assets/CAsset/Enemy Sprite/Enemy02/Normal Death/skeleton-NormDeath_15.png" type="Texture" id=78]
+[ext_resource path="res://assets/CAsset/Enemy Sprite/Enemy02/Normal Death/skeleton-NormDeath_18.png" type="Texture" id=79]
+[ext_resource path="res://assets/CAsset/Enemy Sprite/Enemy02/Normal Death/skeleton-NormDeath_7.png" type="Texture" id=80]
+[ext_resource path="res://assets/CAsset/Enemy Sprite/Enemy02/Normal Death/skeleton-NormDeath_12.png" type="Texture" id=81]
+[ext_resource path="res://assets/CAsset/Enemy Sprite/Enemy02/Normal Death/skeleton-NormDeath_20.png" type="Texture" id=82]
+[ext_resource path="res://assets/CAsset/Enemy Sprite/Enemy02/Normal Death/skeleton-NormDeath_22.png" type="Texture" id=83]
+[ext_resource path="res://assets/CAsset/Enemy Sprite/Enemy02/Normal Death/skeleton-NormDeath_13.png" type="Texture" id=84]
+[ext_resource path="res://assets/CAsset/Enemy Sprite/Enemy02/Normal Death/skeleton-NormDeath_23.png" type="Texture" id=85]
+[ext_resource path="res://assets/CAsset/Enemy Sprite/Enemy02/Normal Death/skeleton-NormDeath_24.png" type="Texture" id=86]
+
+[sub_resource type="CircleShape2D" id=1]
+
+[sub_resource type="SpriteFrames" id=2]
+animations = [ {
+"frames": [ ExtResource( 42 ), ExtResource( 35 ) ],
+"loop": true,
+"name": "idle",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 5 ), ExtResource( 4 ), ExtResource( 2 ), ExtResource( 3 ), ExtResource( 9 ), ExtResource( 10 ), ExtResource( 6 ), ExtResource( 7 ), ExtResource( 8 ), ExtResource( 11 ) ],
+"loop": true,
+"name": "shoot",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 42 ), ExtResource( 35 ), ExtResource( 58 ), ExtResource( 45 ), ExtResource( 36 ), ExtResource( 43 ), ExtResource( 37 ), ExtResource( 59 ), ExtResource( 56 ), ExtResource( 44 ), ExtResource( 46 ), ExtResource( 57 ), ExtResource( 47 ), ExtResource( 38 ), ExtResource( 39 ), ExtResource( 48 ), ExtResource( 40 ), ExtResource( 41 ), ExtResource( 42 ), ExtResource( 35 ), ExtResource( 58 ), ExtResource( 45 ), ExtResource( 36 ), ExtResource( 43 ), ExtResource( 37 ), ExtResource( 59 ), ExtResource( 56 ), ExtResource( 44 ), ExtResource( 46 ), ExtResource( 57 ), ExtResource( 47 ), ExtResource( 38 ), ExtResource( 39 ), ExtResource( 48 ), ExtResource( 40 ), ExtResource( 41 ) ],
+"loop": true,
+"name": "fly",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 49 ), ExtResource( 50 ), ExtResource( 51 ), ExtResource( 52 ), ExtResource( 53 ), ExtResource( 54 ), ExtResource( 55 ), ExtResource( 80 ), ExtResource( 76 ), ExtResource( 72 ), ExtResource( 77 ), ExtResource( 75 ), ExtResource( 81 ), ExtResource( 84 ), ExtResource( 67 ), ExtResource( 78 ), ExtResource( 71 ), ExtResource( 73 ), ExtResource( 79 ), ExtResource( 60 ), ExtResource( 82 ), ExtResource( 65 ), ExtResource( 83 ), ExtResource( 85 ), ExtResource( 86 ), ExtResource( 61 ) ],
+"loop": true,
+"name": "buzz",
+"speed": 5.0
+} ]
+
+[node name="EnemySpider" type="KinematicBody2D"]
+collision_layer = 2
+collision_mask = 4
+script = ExtResource( 1 )
+speed = Vector2( 300, 300 )
+is_up = true
+bullet_direction = Vector2( 0, -1 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( -9.19238, 31.8198 )
+scale = Vector2( 13.6, 6.04 )
+shape = SubResource( 1 )
+
+[node name="VisibilityEnabler2D" type="VisibilityEnabler2D" parent="."]
+rect = Rect2( -50, -33, 100, 66 )
+process_parent = true
+physics_process_parent = true
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 2 )
+animation = "fly"
+frame = 3
+playing = true
+
+[node name="RayCast2D" type="RayCast2D" parent="."]
+enabled = true
+cast_to = Vector2( 800, 0 )
+
+[node name="PistolEnemy" parent="." instance=ExtResource( 74 )]
+position = Vector2( 12, 30 )
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 3.0
+one_shot = true
+
+[connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]

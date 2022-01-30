@@ -1,0 +1,137 @@
+[gd_scene load_steps=16 format=2]
+
+[ext_resource path="res://assets/ui_theme.tres" type="Theme" id=1]
+[ext_resource path="res://assets/CAsset/Backgrounds/01/Repeated.png" type="Texture" id=2]
+[ext_resource path="res://src/UserInterface/Title.tscn" type="PackedScene" id=3]
+[ext_resource path="res://src/UserInterface/SceneChangeButton.tscn" type="PackedScene" id=4]
+[ext_resource path="res://src/UserInterface/QuitButton.tscn" type="PackedScene" id=5]
+[ext_resource path="res://assets/CAsset/User Interface/CloseBtn.png" type="Texture" id=6]
+[ext_resource path="res://assets/CAsset/User Interface/PlayBtn.png" type="Texture" id=7]
+[ext_resource path="res://assets/CAsset/User Interface/prj09.png" type="Texture" id=8]
+[ext_resource path="res://assets/CAsset/User Interface/hudplayerIco.png" type="Texture" id=9]
+[ext_resource path="res://assets/CAsset/User Interface/prj03.png" type="Texture" id=10]
+[ext_resource path="res://assets/CAsset/User Interface/prj10.png" type="Texture" id=11]
+[ext_resource path="res://assets/font/pdark.ttf" type="DynamicFontData" id=12]
+
+[sub_resource type="StyleBoxFlat" id=1]
+bg_color = Color( 0.0470588, 0.345098, 0.282353, 1 )
+border_color = Color( 0.996078, 0.980392, 0.980392, 1 )
+corner_radius_top_left = 2
+corner_radius_top_right = 2
+corner_radius_bottom_right = 2
+corner_radius_bottom_left = 2
+
+[sub_resource type="DynamicFont" id=2]
+size = 50
+outline_size = 1
+use_mipmaps = true
+use_filter = true
+font_data = ExtResource( 12 )
+
+[sub_resource type="DynamicFont" id=3]
+size = 50
+outline_size = 1
+use_mipmaps = true
+use_filter = true
+font_data = ExtResource( 12 )
+
+[node name="MainScreen" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+theme = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect" type="TextureRect" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -5.73608
+margin_right = -5.73608
+texture = ExtResource( 2 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ProgressBar" type="ProgressBar" parent="."]
+visible = false
+margin_left = 651.196
+margin_top = 533.708
+margin_right = 1011.2
+margin_bottom = 564.708
+rect_scale = Vector2( 1.87439, 1.61773 )
+custom_styles/bg = SubResource( 1 )
+max_value = 1.0
+step = 0.001
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Menu" type="VBoxContainer" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = 356.0
+margin_top = -255.0
+margin_right = 716.0
+margin_bottom = 91.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Texture" type="Node2D" parent="Menu"]
+position = Vector2( -1316, -285 )
+
+[node name="Title" parent="Menu/Texture" instance=ExtResource( 3 )]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = 490.981
+margin_top = 544.587
+margin_right = 1177.98
+margin_bottom = 714.587
+text = "JACK JETPACK"
+
+[node name="prj10" type="Sprite" parent="Menu/Texture"]
+position = Vector2( 1163.73, 818.477 )
+texture = ExtResource( 11 )
+
+[node name="hudplayerIco" type="Sprite" parent="Menu/Texture"]
+position = Vector2( 841.338, 438.987 )
+scale = Vector2( 2.74686, 2.69445 )
+texture = ExtResource( 9 )
+
+[node name="prj03" type="Sprite" parent="Menu/Texture"]
+position = Vector2( 254.156, 248.975 )
+texture = ExtResource( 10 )
+
+[node name="prj09" type="Sprite" parent="Menu/Texture"]
+position = Vector2( 1019.93, 818.92 )
+texture = ExtResource( 8 )
+
+[node name="PlayButton" parent="Menu" instance=ExtResource( 4 )]
+margin_right = 360.0
+margin_bottom = 169.0
+focus_mode = 1
+custom_fonts/font = SubResource( 2 )
+enabled_focus_mode = 1
+text = "Play"
+icon = ExtResource( 7 )
+flat = true
+clip_text = true
+expand_icon = false
+next_scene_path = "res://src/Levels/Level01.tscn"
+
+[node name="QuitButton" parent="Menu" instance=ExtResource( 5 )]
+margin_top = 177.0
+margin_right = 360.0
+margin_bottom = 346.0
+focus_mode = 1
+custom_fonts/font = SubResource( 3 )
+enabled_focus_mode = 1
+icon = ExtResource( 6 )
+flat = true
+expand_icon = false

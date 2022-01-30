@@ -1,0 +1,122 @@
+[gd_scene load_steps=59 format=2]
+
+[ext_resource path="res://src/Actors/Enemy.gd" type="Script" id=1]
+[ext_resource path="res://assets/CAsset/Enemy Sprite/Space/Char02/Moving/skeleton-Moving_16.png" type="Texture" id=5]
+[ext_resource path="res://assets/CAsset/Enemy Sprite/Space/Char02/Moving/skeleton-Moving_17.png" type="Texture" id=6]
+[ext_resource path="res://assets/CAsset/Enemy Sprite/Space/Char02/Moving/skeleton-Moving_13.png" type="Texture" id=8]
+[ext_resource path="res://assets/CAsset/Enemy Sprite/Space/Char02/Moving/skeleton-Moving_14.png" type="Texture" id=9]
+[ext_resource path="res://assets/CAsset/Enemy Sprite/Space/Char02/Moving/skeleton-Moving_15.png" type="Texture" id=10]
+[ext_resource path="res://assets/CAsset/Enemy Sprite/Space/Char02/Moving/skeleton-Moving_6.png" type="Texture" id=25]
+[ext_resource path="res://assets/CAsset/Enemy Sprite/Space/Char02/Moving/skeleton-Moving_7.png" type="Texture" id=26]
+[ext_resource path="res://assets/CAsset/Enemy Sprite/Space/Char02/Moving/skeleton-Moving_8.png" type="Texture" id=27]
+[ext_resource path="res://assets/CAsset/Enemy Sprite/Space/Char02/Moving/skeleton-Moving_9.png" type="Texture" id=28]
+[ext_resource path="res://assets/CAsset/Enemy Sprite/Space/Char02/Moving/skeleton-Moving_10.png" type="Texture" id=29]
+[ext_resource path="res://assets/CAsset/Enemy Sprite/Space/Char02/Moving/skeleton-Moving_11.png" type="Texture" id=30]
+[ext_resource path="res://assets/CAsset/Enemy Sprite/Space/Char02/Moving/skeleton-Moving_12.png" type="Texture" id=31]
+[ext_resource path="res://assets/CAsset/Enemy Sprite/Space/Char02/Moving/skeleton-Moving_5.png" type="Texture" id=32]
+[ext_resource path="res://assets/CAsset/Enemy Sprite/Space/Char02/Moving/skeleton-Moving_0.png" type="Texture" id=33]
+[ext_resource path="res://assets/CAsset/Enemy Sprite/Space/Char02/Moving/skeleton-Moving_1.png" type="Texture" id=34]
+[ext_resource path="res://assets/CAsset/Enemy Sprite/Space/Char02/Moving/skeleton-Moving_2.png" type="Texture" id=35]
+[ext_resource path="res://assets/CAsset/Enemy Sprite/Space/Char02/Moving/skeleton-Moving_3.png" type="Texture" id=36]
+[ext_resource path="res://assets/CAsset/Enemy Sprite/Space/Char02/Moving/skeleton-Moving_4.png" type="Texture" id=37]
+[ext_resource path="res://assets/CAsset/Enemy Sprite/Space/Char02/Destroyed/skeleton-Destroyed_9.png" type="Texture" id=38]
+[ext_resource path="res://assets/CAsset/Enemy Sprite/Space/Char02/Destroyed/skeleton-Destroyed_10.png" type="Texture" id=39]
+[ext_resource path="res://assets/CAsset/Enemy Sprite/Space/Char02/Destroyed/skeleton-Destroyed_11.png" type="Texture" id=40]
+[ext_resource path="res://assets/CAsset/Enemy Sprite/Space/Char02/Destroyed/skeleton-Destroyed_8.png" type="Texture" id=41]
+[ext_resource path="res://assets/CAsset/Enemy Sprite/Space/Char02/Destroyed/skeleton-Destroyed_2.png" type="Texture" id=42]
+[ext_resource path="res://assets/CAsset/Enemy Sprite/Space/Char02/Destroyed/skeleton-Destroyed_3.png" type="Texture" id=43]
+[ext_resource path="res://assets/CAsset/Enemy Sprite/Space/Char02/Destroyed/skeleton-Destroyed_0.png" type="Texture" id=44]
+[ext_resource path="res://assets/CAsset/Enemy Sprite/Space/Char02/Destroyed/skeleton-Destroyed_1.png" type="Texture" id=45]
+[ext_resource path="res://assets/CAsset/Enemy Sprite/Space/Char02/Destroyed/skeleton-Destroyed_7.png" type="Texture" id=46]
+[ext_resource path="res://assets/CAsset/Enemy Sprite/Space/Char02/Destroyed/skeleton-Destroyed_4.png" type="Texture" id=47]
+[ext_resource path="res://assets/CAsset/Enemy Sprite/Space/Char02/Destroyed/skeleton-Destroyed_5.png" type="Texture" id=48]
+[ext_resource path="res://assets/CAsset/Enemy Sprite/Space/Char02/Destroyed/skeleton-Destroyed_6.png" type="Texture" id=49]
+[ext_resource path="res://assets/CAsset/Enemy Sprite/Space/Char02/Destroyed/skeleton-Destroyed_14.png" type="Texture" id=50]
+[ext_resource path="res://assets/CAsset/Enemy Sprite/Space/Char02/Destroyed/skeleton-Destroyed_13.png" type="Texture" id=51]
+[ext_resource path="res://assets/CAsset/Enemy Sprite/Space/Char02/Destroyed/skeleton-Destroyed_12.png" type="Texture" id=52]
+[ext_resource path="res://assets/CAsset/Enemy Sprite/Space/Char02/Destroyed/skeleton-Destroyed_15.png" type="Texture" id=53]
+[ext_resource path="res://assets/CAsset/Enemy Sprite/Space/Char02/Destroyed/skeleton-Destroyed_17.png" type="Texture" id=54]
+[ext_resource path="res://assets/CAsset/Enemy Sprite/Space/Char02/Destroyed/skeleton-Destroyed_16.png" type="Texture" id=55]
+[ext_resource path="res://assets/CAsset/Enemy Sprite/Space/Char02/Shoot/skeleton-Shoot_1.png" type="Texture" id=56]
+[ext_resource path="res://assets/CAsset/Enemy Sprite/Space/Char02/Shoot/skeleton-Shoot_4.png" type="Texture" id=57]
+[ext_resource path="res://assets/CAsset/Enemy Sprite/Space/Char02/Shoot/skeleton-Shoot_3.png" type="Texture" id=58]
+[ext_resource path="res://assets/CAsset/Enemy Sprite/Space/Char02/Shoot/skeleton-Shoot_5.png" type="Texture" id=59]
+[ext_resource path="res://assets/CAsset/Enemy Sprite/Space/Char02/Shoot/skeleton-Shoot_9.png" type="Texture" id=60]
+[ext_resource path="res://assets/CAsset/Enemy Sprite/Space/Char02/Shoot/skeleton-Shoot_14.png" type="Texture" id=61]
+[ext_resource path="res://assets/CAsset/Enemy Sprite/Space/Char02/Shoot/skeleton-Shoot_15.png" type="Texture" id=62]
+[ext_resource path="res://assets/CAsset/Enemy Sprite/Space/Char02/Shoot/skeleton-Shoot_12.png" type="Texture" id=63]
+[ext_resource path="res://assets/CAsset/Enemy Sprite/Space/Char02/Shoot/skeleton-Shoot_0.png" type="Texture" id=64]
+[ext_resource path="res://assets/CAsset/Enemy Sprite/Space/Char02/Shoot/skeleton-Shoot_2.png" type="Texture" id=65]
+[ext_resource path="res://assets/CAsset/Enemy Sprite/Space/Char02/Shoot/skeleton-Shoot_7.png" type="Texture" id=66]
+[ext_resource path="res://assets/CAsset/Enemy Sprite/Space/Char02/Shoot/skeleton-Shoot_8.png" type="Texture" id=67]
+[ext_resource path="res://assets/CAsset/Enemy Sprite/Space/Char02/Shoot/skeleton-Shoot_11.png" type="Texture" id=68]
+[ext_resource path="res://assets/CAsset/Enemy Sprite/Space/Char02/Shoot/skeleton-Shoot_16.png" type="Texture" id=69]
+[ext_resource path="res://assets/CAsset/Enemy Sprite/Space/Char02/Shoot/skeleton-Shoot_17.png" type="Texture" id=70]
+[ext_resource path="res://assets/CAsset/Enemy Sprite/Space/Char02/Shoot/skeleton-Shoot_13.png" type="Texture" id=71]
+[ext_resource path="res://assets/CAsset/Enemy Sprite/Space/Char02/Shoot/skeleton-Shoot_10.png" type="Texture" id=72]
+[ext_resource path="res://assets/CAsset/Enemy Sprite/Space/Char02/Shoot/skeleton-Shoot_6.png" type="Texture" id=73]
+[ext_resource path="res://src/Objects/PistolEnemy.tscn" type="PackedScene" id=74]
+
+[sub_resource type="CircleShape2D" id=1]
+
+[sub_resource type="SpriteFrames" id=2]
+animations = [ {
+"frames": [  ],
+"loop": true,
+"name": "idle",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 64 ), ExtResource( 56 ), ExtResource( 65 ), ExtResource( 58 ), ExtResource( 57 ), ExtResource( 59 ), ExtResource( 73 ), ExtResource( 66 ), ExtResource( 67 ), ExtResource( 60 ), ExtResource( 72 ), ExtResource( 68 ), ExtResource( 63 ), ExtResource( 71 ), ExtResource( 61 ), ExtResource( 62 ), ExtResource( 69 ), ExtResource( 70 ) ],
+"loop": true,
+"name": "shoot",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 33 ), ExtResource( 34 ), ExtResource( 35 ), ExtResource( 36 ), ExtResource( 37 ), ExtResource( 32 ), ExtResource( 25 ), ExtResource( 26 ), ExtResource( 27 ), ExtResource( 28 ), ExtResource( 29 ), ExtResource( 30 ), ExtResource( 31 ), ExtResource( 8 ), ExtResource( 9 ), ExtResource( 10 ), ExtResource( 5 ), ExtResource( 6 ) ],
+"loop": true,
+"name": "fly",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 44 ), ExtResource( 45 ), ExtResource( 42 ), ExtResource( 43 ), ExtResource( 47 ), ExtResource( 48 ), ExtResource( 49 ), ExtResource( 46 ), ExtResource( 41 ), ExtResource( 38 ), ExtResource( 39 ), ExtResource( 40 ), ExtResource( 52 ), ExtResource( 51 ), ExtResource( 50 ), ExtResource( 53 ), ExtResource( 55 ), ExtResource( 54 ) ],
+"loop": true,
+"name": "buzz",
+"speed": 5.0
+} ]
+
+[node name="Enemy11" type="KinematicBody2D"]
+collision_layer = 2
+collision_mask = 4
+script = ExtResource( 1 )
+speed = Vector2( 300, 300 )
+use_gravity = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( -39.3537, -0.891056 )
+scale = Vector2( 7.28, 5.24 )
+shape = SubResource( 1 )
+
+[node name="VisibilityEnabler2D" type="VisibilityEnabler2D" parent="."]
+position = Vector2( -34.6485, -0.404387 )
+scale = Vector2( 0.640265, 0.682881 )
+rect = Rect2( -50, -33, 100, 66 )
+process_parent = true
+physics_process_parent = true
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+scale = Vector2( 0.8, 0.8 )
+frames = SubResource( 2 )
+animation = "fly"
+frame = 11
+playing = true
+
+[node name="RayCast2D" type="RayCast2D" parent="."]
+enabled = true
+cast_to = Vector2( 1500, 0 )
+
+[node name="PistolEnemy" parent="." instance=ExtResource( 74 )]
+position = Vector2( -27.7795, 17.4614 )
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 3.0
+one_shot = true
+
+[connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]

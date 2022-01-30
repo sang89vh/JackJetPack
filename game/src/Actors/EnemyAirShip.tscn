@@ -1,0 +1,125 @@
+[gd_scene load_steps=67 format=2]
+
+[ext_resource path="res://src/Actors/Enemy.gd" type="Script" id=1]
+[ext_resource path="res://assets/CAsset/Enemy Sprite/AirShip/Enemy01/SlowAttack/skeleton-SlowAttack_2.png" type="Texture" id=2]
+[ext_resource path="res://assets/CAsset/Enemy Sprite/AirShip/Enemy01/SlowAttack/skeleton-SlowAttack_3.png" type="Texture" id=3]
+[ext_resource path="res://src/Objects/PistolEnemy.tscn" type="PackedScene" id=4]
+[ext_resource path="res://assets/CAsset/Enemy Sprite/AirShip/Enemy01/SlowAttack/skeleton-SlowAttack_5.png" type="Texture" id=5]
+[ext_resource path="res://assets/CAsset/Enemy Sprite/AirShip/Enemy01/NormalMoving/skeleton-NormalMoving_2.png" type="Texture" id=6]
+[ext_resource path="res://assets/CAsset/Enemy Sprite/AirShip/Enemy01/NormalMoving/skeleton-NormalMoving_10.png" type="Texture" id=7]
+[ext_resource path="res://assets/CAsset/Enemy Sprite/AirShip/Enemy01/NormalMoving/skeleton-NormalMoving_11.png" type="Texture" id=8]
+[ext_resource path="res://assets/CAsset/Enemy Sprite/AirShip/Enemy01/NormalMoving/skeleton-NormalMoving_4.png" type="Texture" id=9]
+[ext_resource path="res://assets/CAsset/Enemy Sprite/AirShip/Enemy01/NormalMoving/skeleton-NormalMoving_14.png" type="Texture" id=10]
+[ext_resource path="res://assets/CAsset/Enemy Sprite/AirShip/Enemy01/SlowAttack/skeleton-SlowAttack_8.png" type="Texture" id=11]
+[ext_resource path="res://assets/CAsset/Enemy Sprite/AirShip/Enemy01/NormalMoving/skeleton-NormalMoving_8.png" type="Texture" id=12]
+[ext_resource path="res://assets/CAsset/Enemy Sprite/AirShip/Enemy01/SlowAttack/skeleton-SlowAttack_11.png" type="Texture" id=13]
+[ext_resource path="res://assets/CAsset/Enemy Sprite/AirShip/Enemy01/NormalMoving/skeleton-NormalMoving_0.png" type="Texture" id=14]
+[ext_resource path="res://assets/CAsset/Enemy Sprite/AirShip/Enemy01/Destroyed/skeleton-Destroyed_33.png" type="Texture" id=15]
+[ext_resource path="res://assets/CAsset/Enemy Sprite/AirShip/Enemy01/Destroyed/skeleton-Destroyed_34.png" type="Texture" id=16]
+[ext_resource path="res://assets/CAsset/Enemy Sprite/AirShip/Enemy01/NormalMoving/skeleton-NormalMoving_16.png" type="Texture" id=17]
+[ext_resource path="res://assets/CAsset/Enemy Sprite/AirShip/Enemy01/SlowAttack/skeleton-SlowAttack_10.png" type="Texture" id=18]
+[ext_resource path="res://assets/CAsset/Enemy Sprite/AirShip/Enemy01/SlowAttack/skeleton-SlowAttack_6.png" type="Texture" id=19]
+[ext_resource path="res://assets/CAsset/Enemy Sprite/AirShip/Enemy01/NormalMoving/skeleton-NormalMoving_17.png" type="Texture" id=20]
+[ext_resource path="res://assets/CAsset/Enemy Sprite/AirShip/Enemy01/NormalMoving/skeleton-NormalMoving_5.png" type="Texture" id=21]
+[ext_resource path="res://assets/CAsset/Enemy Sprite/AirShip/Enemy01/NormalMoving/skeleton-NormalMoving_12.png" type="Texture" id=22]
+[ext_resource path="res://assets/CAsset/Enemy Sprite/AirShip/Enemy01/NormalMoving/skeleton-NormalMoving_9.png" type="Texture" id=23]
+[ext_resource path="res://assets/CAsset/Enemy Sprite/AirShip/Enemy01/NormalMoving/skeleton-NormalMoving_13.png" type="Texture" id=24]
+[ext_resource path="res://assets/CAsset/Enemy Sprite/AirShip/Enemy01/NormalMoving/skeleton-NormalMoving_3.png" type="Texture" id=25]
+[ext_resource path="res://assets/CAsset/Enemy Sprite/AirShip/Enemy01/SlowAttack/skeleton-SlowAttack_12.png" type="Texture" id=26]
+[ext_resource path="res://assets/CAsset/Enemy Sprite/AirShip/Enemy01/SlowAttack/skeleton-SlowAttack_4.png" type="Texture" id=27]
+[ext_resource path="res://assets/CAsset/Enemy Sprite/AirShip/Enemy01/SlowAttack/skeleton-SlowAttack_14.png" type="Texture" id=28]
+[ext_resource path="res://assets/CAsset/Enemy Sprite/AirShip/Enemy01/SlowAttack/skeleton-SlowAttack_15.png" type="Texture" id=29]
+[ext_resource path="res://assets/CAsset/Enemy Sprite/AirShip/Enemy01/NormalMoving/skeleton-NormalMoving_15.png" type="Texture" id=30]
+[ext_resource path="res://assets/CAsset/Enemy Sprite/AirShip/Enemy01/SlowAttack/skeleton-SlowAttack_0.png" type="Texture" id=31]
+[ext_resource path="res://assets/CAsset/Enemy Sprite/AirShip/Enemy01/SlowAttack/skeleton-SlowAttack_1.png" type="Texture" id=32]
+[ext_resource path="res://assets/CAsset/Enemy Sprite/AirShip/Enemy01/NormalMoving/skeleton-NormalMoving_1.png" type="Texture" id=33]
+[ext_resource path="res://assets/CAsset/Enemy Sprite/AirShip/Enemy01/NormalMoving/skeleton-NormalMoving_6.png" type="Texture" id=34]
+[ext_resource path="res://assets/CAsset/Enemy Sprite/AirShip/Enemy01/Destroyed/skeleton-Destroyed_29.png" type="Texture" id=35]
+[ext_resource path="res://assets/CAsset/Enemy Sprite/AirShip/Enemy01/SlowAttack/skeleton-SlowAttack_7.png" type="Texture" id=36]
+[ext_resource path="res://assets/CAsset/Enemy Sprite/AirShip/Enemy01/SlowAttack/skeleton-SlowAttack_9.png" type="Texture" id=37]
+[ext_resource path="res://assets/CAsset/Enemy Sprite/AirShip/Enemy01/SlowAttack/skeleton-SlowAttack_13.png" type="Texture" id=38]
+[ext_resource path="res://assets/CAsset/Enemy Sprite/AirShip/Enemy01/Destroyed/skeleton-Destroyed_30.png" type="Texture" id=39]
+[ext_resource path="res://assets/CAsset/Enemy Sprite/AirShip/Enemy01/SlowAttack/skeleton-SlowAttack_20.png" type="Texture" id=40]
+[ext_resource path="res://assets/CAsset/Enemy Sprite/AirShip/Enemy01/SlowAttack/skeleton-SlowAttack_18.png" type="Texture" id=41]
+[ext_resource path="res://assets/CAsset/Enemy Sprite/AirShip/Enemy01/NormalMoving/skeleton-NormalMoving_7.png" type="Texture" id=42]
+[ext_resource path="res://assets/CAsset/Enemy Sprite/AirShip/Enemy01/SlowAttack/skeleton-SlowAttack_23.png" type="Texture" id=43]
+[ext_resource path="res://assets/CAsset/Enemy Sprite/AirShip/Enemy01/SlowAttack/skeleton-SlowAttack_25.png" type="Texture" id=44]
+[ext_resource path="res://assets/CAsset/Enemy Sprite/AirShip/Enemy01/SlowAttack/skeleton-SlowAttack_31.png" type="Texture" id=45]
+[ext_resource path="res://assets/CAsset/Enemy Sprite/AirShip/Enemy01/SlowAttack/skeleton-SlowAttack_26.png" type="Texture" id=46]
+[ext_resource path="res://assets/CAsset/Enemy Sprite/AirShip/Enemy01/SlowAttack/skeleton-SlowAttack_33.png" type="Texture" id=47]
+[ext_resource path="res://assets/CAsset/Enemy Sprite/AirShip/Enemy01/SlowAttack/skeleton-SlowAttack_28.png" type="Texture" id=48]
+[ext_resource path="res://assets/CAsset/Enemy Sprite/AirShip/Enemy01/SlowAttack/skeleton-SlowAttack_16.png" type="Texture" id=49]
+[ext_resource path="res://assets/CAsset/Enemy Sprite/AirShip/Enemy01/SlowAttack/skeleton-SlowAttack_29.png" type="Texture" id=50]
+[ext_resource path="res://assets/CAsset/Enemy Sprite/AirShip/Enemy01/SlowAttack/skeleton-SlowAttack_30.png" type="Texture" id=51]
+[ext_resource path="res://assets/CAsset/Enemy Sprite/AirShip/Enemy01/SlowAttack/skeleton-SlowAttack_32.png" type="Texture" id=52]
+[ext_resource path="res://assets/CAsset/Enemy Sprite/AirShip/Enemy01/SlowAttack/skeleton-SlowAttack_22.png" type="Texture" id=53]
+[ext_resource path="res://assets/CAsset/Enemy Sprite/AirShip/Enemy01/SlowAttack/skeleton-SlowAttack_27.png" type="Texture" id=54]
+[ext_resource path="res://assets/CAsset/Enemy Sprite/AirShip/Enemy01/Destroyed/skeleton-Destroyed_28.png" type="Texture" id=55]
+[ext_resource path="res://assets/CAsset/Enemy Sprite/AirShip/Enemy01/Destroyed/skeleton-Destroyed_32.png" type="Texture" id=56]
+[ext_resource path="res://assets/CAsset/Enemy Sprite/AirShip/Enemy01/Destroyed/skeleton-Destroyed_27.png" type="Texture" id=57]
+[ext_resource path="res://assets/CAsset/Enemy Sprite/AirShip/Enemy01/SlowAttack/skeleton-SlowAttack_21.png" type="Texture" id=58]
+[ext_resource path="res://assets/CAsset/Enemy Sprite/AirShip/Enemy01/SlowAttack/skeleton-SlowAttack_17.png" type="Texture" id=59]
+[ext_resource path="res://assets/CAsset/Enemy Sprite/AirShip/Enemy01/SlowAttack/skeleton-SlowAttack_24.png" type="Texture" id=60]
+[ext_resource path="res://assets/CAsset/Enemy Sprite/AirShip/Enemy01/SlowAttack/skeleton-SlowAttack_19.png" type="Texture" id=61]
+[ext_resource path="res://assets/CAsset/Enemy Sprite/AirShip/Enemy01/SlowAttack/skeleton-SlowAttack_34.png" type="Texture" id=62]
+[ext_resource path="res://assets/CAsset/Enemy Sprite/AirShip/Enemy01/Destroyed/skeleton-Destroyed_26.png" type="Texture" id=65]
+[ext_resource path="res://assets/CAsset/Enemy Sprite/AirShip/Enemy01/Destroyed/skeleton-Destroyed_31.png" type="Texture" id=71]
+
+[sub_resource type="CapsuleShape2D" id=1]
+height = 124.384
+
+[sub_resource type="SpriteFrames" id=2]
+animations = [ {
+"frames": [ ExtResource( 31 ), ExtResource( 32 ), ExtResource( 2 ), ExtResource( 3 ), ExtResource( 27 ), ExtResource( 5 ), ExtResource( 19 ), ExtResource( 36 ), ExtResource( 11 ), ExtResource( 37 ), ExtResource( 18 ), ExtResource( 13 ), ExtResource( 26 ), ExtResource( 38 ), ExtResource( 28 ), ExtResource( 29 ), ExtResource( 49 ), ExtResource( 59 ), ExtResource( 41 ), ExtResource( 61 ), ExtResource( 40 ), ExtResource( 58 ), ExtResource( 53 ), ExtResource( 43 ), ExtResource( 60 ), ExtResource( 44 ), ExtResource( 46 ), ExtResource( 54 ), ExtResource( 48 ), ExtResource( 50 ), ExtResource( 51 ), ExtResource( 45 ), ExtResource( 52 ), ExtResource( 47 ), ExtResource( 62 ) ],
+"loop": true,
+"name": "shoot",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 14 ), ExtResource( 33 ), ExtResource( 6 ), ExtResource( 25 ), ExtResource( 9 ), ExtResource( 21 ), ExtResource( 34 ), ExtResource( 42 ), ExtResource( 12 ), ExtResource( 23 ), ExtResource( 7 ), ExtResource( 8 ), ExtResource( 22 ), ExtResource( 24 ), ExtResource( 10 ), ExtResource( 30 ), ExtResource( 17 ), ExtResource( 20 ) ],
+"loop": true,
+"name": "fly",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 65 ), ExtResource( 57 ), ExtResource( 55 ), ExtResource( 35 ), ExtResource( 39 ), ExtResource( 71 ), ExtResource( 56 ), ExtResource( 15 ), ExtResource( 16 ) ],
+"loop": true,
+"name": "buzz",
+"speed": 5.0
+} ]
+
+[node name="EnemyAirShip" type="KinematicBody2D"]
+collision_layer = 2
+collision_mask = 4
+script = ExtResource( 1 )
+speed = Vector2( 300, 300 )
+use_gravity = false
+is_shootable = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+scale = Vector2( 3.76, 1.64 )
+shape = SubResource( 1 )
+
+[node name="VisibilityEnabler2D" type="VisibilityEnabler2D" parent="."]
+rect = Rect2( -50, -33, 100, 66 )
+process_parent = true
+physics_process_parent = true
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 2 )
+animation = "fly"
+frame = 8
+playing = true
+flip_h = true
+
+[node name="RayCast2D" type="RayCast2D" parent="."]
+enabled = true
+cast_to = Vector2( 800, 0 )
+
+[node name="PistolEnemy" parent="." instance=ExtResource( 4 )]
+bullet_move_speed = 100
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 3.0
+one_shot = true
+
+[connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]

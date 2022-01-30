@@ -1,0 +1,4 @@
+#Sun Jun 13 19:55:29 ICT 2021
+base.0=D\:\\GODOT\\jackjetpack\\game\\android\\build\\build\\intermediates\\dex\\release\\mergeDexRelease\\classes.dex
+path.0=classes.dex
+renamed.0=classes.dex

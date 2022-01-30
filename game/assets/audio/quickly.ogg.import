@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/quickly.ogg-8de174e34de190c138b69857e8ab9c7a.oggstr"
+
+[deps]
+
+source_file="res://assets/audio/quickly.ogg"
+dest_files=[ "res://.import/quickly.ogg-8de174e34de190c138b69857e8ab9c7a.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

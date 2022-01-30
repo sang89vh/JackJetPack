@@ -1,0 +1,67 @@
+[gd_scene load_steps=16 format=2]
+
+[ext_resource path="res://src/Actors/Enemy.gd" type="Script" id=1]
+[ext_resource path="res://assets/CAsset/Enemy Sprite/09/3.png" type="Texture" id=2]
+[ext_resource path="res://assets/CAsset/Enemy Sprite/09/4.png" type="Texture" id=3]
+[ext_resource path="res://assets/CAsset/Enemy Sprite/09/2.png" type="Texture" id=4]
+[ext_resource path="res://assets/CAsset/Enemy Sprite/09/1.png" type="Texture" id=5]
+[ext_resource path="res://src/Objects/PistolEnemy.tscn" type="PackedScene" id=6]
+[ext_resource path="res://assets/CAsset/Collision FX/02/5.png" type="Texture" id=7]
+[ext_resource path="res://assets/CAsset/Collision FX/02/7.png" type="Texture" id=8]
+[ext_resource path="res://assets/CAsset/Collision FX/02/4.png" type="Texture" id=9]
+[ext_resource path="res://assets/CAsset/Collision FX/02/2.png" type="Texture" id=10]
+[ext_resource path="res://assets/CAsset/Collision FX/02/6.png" type="Texture" id=11]
+[ext_resource path="res://assets/CAsset/Collision FX/02/3.png" type="Texture" id=12]
+[ext_resource path="res://assets/CAsset/Collision FX/02/1.png" type="Texture" id=13]
+
+[sub_resource type="CapsuleShape2D" id=1]
+height = 53.7839
+
+[sub_resource type="SpriteFrames" id=2]
+animations = [ {
+"frames": [ ExtResource( 5 ), ExtResource( 4 ), ExtResource( 2 ), ExtResource( 3 ) ],
+"loop": true,
+"name": "fly",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 13 ), ExtResource( 10 ), ExtResource( 12 ), ExtResource( 9 ), ExtResource( 7 ), ExtResource( 11 ), ExtResource( 8 ) ],
+"loop": true,
+"name": "buzz",
+"speed": 5.0
+} ]
+
+[node name="Enemy9" type="KinematicBody2D"]
+collision_layer = 2
+collision_mask = 4
+script = ExtResource( 1 )
+use_gravity = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( -45.4889, -2.30687 )
+scale = Vector2( 2.89709, 0.47707 )
+shape = SubResource( 1 )
+
+[node name="VisibilityEnabler2D" type="VisibilityEnabler2D" parent="."]
+position = Vector2( -45.0311, -1.8202 )
+scale = Vector2( 0.640265, 0.682881 )
+rect = Rect2( -50, -33, 100, 66 )
+process_parent = true
+physics_process_parent = true
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+frames = SubResource( 2 )
+animation = "fly"
+frame = 2
+playing = true
+
+[node name="RayCast2D" type="RayCast2D" parent="."]
+enabled = true
+cast_to = Vector2( 800, 0 )
+
+[node name="PistolEnemy" parent="." instance=ExtResource( 6 )]
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 3.0
+one_shot = true
+
+[connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]

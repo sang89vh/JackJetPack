@@ -1,0 +1,9 @@
+diff a/game/src/Levels/LevelTemplate.tscn b/game/src/Levels/LevelTemplate.tscn	(rejected hunks)
+@@ -36,7 +36,6 @@
+ 
+ [node name="Portal2D" parent="." instance=ExtResource( 5 )]
+ position = Vector2( 1750, 800 )
+-next_level_scene = "res://src/levels/Level02.tscn"
+ next_scene = null
+ 
+ [node name="Coins" type="Node2D" parent="."]

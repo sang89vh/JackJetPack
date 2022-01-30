@@ -1,0 +1,8 @@
+[gd_scene format=2]
+
+[node name="Level01" type="Node2D"]
+position = Vector2( -22.2937, 12.0483 )
+__meta__ = {
+"_edit_lock_": true,
+"_edit_vertical_guides_": [  ]
+}

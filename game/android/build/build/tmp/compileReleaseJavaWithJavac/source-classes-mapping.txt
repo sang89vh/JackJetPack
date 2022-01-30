@@ -1,0 +1,18 @@
+GodotAdMob.java
+ org.godotengine.godot.GodotAdMob
+ org.godotengine.godot.GodotAdMob$1
+ org.godotengine.godot.GodotAdMob$1$1
+ org.godotengine.godot.GodotAdMob$2
+ org.godotengine.godot.GodotAdMob$3
+ org.godotengine.godot.GodotAdMob$4
+ org.godotengine.godot.GodotAdMob$4$1
+ org.godotengine.godot.GodotAdMob$5
+ org.godotengine.godot.GodotAdMob$6
+ org.godotengine.godot.GodotAdMob$7
+ org.godotengine.godot.GodotAdMob$8
+ org.godotengine.godot.GodotAdMob$8$1
+ org.godotengine.godot.GodotAdMob$9
+com/godot/game/BuildConfig.java
+ com.godot.game.BuildConfig
+com/godot/game/GodotApp.java
+ com.godot.game.GodotApp

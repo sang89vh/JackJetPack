@@ -1,0 +1,75 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://src/Actors/EnemySaw.gd" type="Script" id=1]
+[ext_resource path="res://assets/enemies/saw_glow36.png" type="Texture" id=2]
+[ext_resource path="res://assets/light/light.png" type="Texture" id=3]
+[ext_resource path="res://assets/enemies/saw_glow32.png" type="Texture" id=4]
+
+[sub_resource type="CircleShape2D" id=1]
+radius = 59.4243
+
+[sub_resource type="Animation" id=2]
+resource_name = "run"
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:rotation_degrees")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ 0.0, 360.0 ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Sprite2:rotation_degrees")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ 360.0, 0.0 ]
+}
+
+[node name="EnemySaw" type="KinematicBody2D"]
+collision_layer = 2
+collision_mask = 4
+script = ExtResource( 1 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource( 1 )
+
+[node name="VisibilityEnabler2D" type="VisibilityEnabler2D" parent="."]
+position = Vector2( -1.61293, -22.1135 )
+scale = Vector2( 0.640265, 0.682881 )
+rect = Rect2( -50, -33, 100, 66 )
+process_parent = true
+physics_process_parent = true
+
+[node name="Sprite" type="Sprite" parent="."]
+rotation = 5.92781
+scale = Vector2( 0.5, 0.5 )
+texture = ExtResource( 4 )
+
+[node name="Light2D" type="Light2D" parent="Sprite"]
+visible = false
+position = Vector2( 1.50364, -1.48106 )
+texture = ExtResource( 3 )
+
+[node name="Sprite2" type="Sprite" parent="."]
+rotation = 0.355371
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 2 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+autoplay = "run"
+anims/run = SubResource( 2 )
+
+[node name="VisibilityEnabler2D2" type="VisibilityEnabler2D" parent="."]
+process_parent = true
+physics_process_parent = true

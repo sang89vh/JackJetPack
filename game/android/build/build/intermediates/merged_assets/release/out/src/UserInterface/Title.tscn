@@ -1,0 +1,22 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://assets/ui_theme.tres" type="Theme" id=1]
+[ext_resource path="res://assets/font/pdark.ttf" type="DynamicFontData" id=2]
+
+[sub_resource type="DynamicFont" id=1]
+size = 60
+outline_color = Color( 0.92549, 0.6, 0.0392157, 1 )
+use_mipmaps = true
+font_data = ExtResource( 2 )
+
+[node name="Title" type="Label"]
+anchor_right = 1.0
+margin_bottom = 353.0
+theme = ExtResource( 1 )
+custom_fonts/font = SubResource( 1 )
+text = "Game Title"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}

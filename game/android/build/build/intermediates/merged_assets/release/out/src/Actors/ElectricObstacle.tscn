@@ -1,0 +1,29 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://assets/CAsset/Weapons/Sprite_Electirc01/4.png" type="Texture" id=1]
+[ext_resource path="res://assets/CAsset/Weapons/Sprite_Electirc01/1.png" type="Texture" id=2]
+[ext_resource path="res://assets/CAsset/Weapons/Sprite_Electirc01/3.png" type="Texture" id=3]
+[ext_resource path="res://assets/CAsset/Weapons/Sprite_Electirc01/2.png" type="Texture" id=4]
+
+[sub_resource type="RectangleShape2D" id=1]
+
+[sub_resource type="SpriteFrames" id=2]
+animations = [ {
+"frames": [ ExtResource( 2 ), ExtResource( 4 ), ExtResource( 3 ), ExtResource( 1 ) ],
+"loop": true,
+"name": "fire",
+"speed": 5.0
+} ]
+
+[node name="ElectricObstacle" type="Area2D"]
+collision_layer = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+scale = Vector2( 27.76, 5.04 )
+shape = SubResource( 1 )
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+frames = SubResource( 2 )
+animation = "fire"
+frame = 3
+playing = true
